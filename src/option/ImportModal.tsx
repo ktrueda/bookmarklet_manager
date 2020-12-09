@@ -5,7 +5,7 @@ import { ScriptView } from "../common/ScriptView";
 import { BMScript } from "../types";
 
 const PUBLIC_SCRIPT_URL =
-  "https://raw.githubusercontent.com/ktrueda/tmp/main/public_scripts.json";
+  "https://raw.githubusercontent.com/ktrueda/bookmarklet_manager/master/public_scripts.json";
 
 const fetchPublicScripts = () => {
   return fetch(PUBLIC_SCRIPT_URL)
