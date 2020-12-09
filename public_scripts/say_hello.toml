@@ -1,0 +1,9 @@
+[owner]
+name = "ktrueda"
+
+[script]
+title = "Say Hello"
+target = "http(s)://.*"
+body = '''
+alert("hello");
+'''

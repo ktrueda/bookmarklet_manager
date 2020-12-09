@@ -1,0 +1,9 @@
+[owner]
+name = "ktrueda"
+
+[script]
+title = "Uncheck all Viewd in Github PR"
+target = "https://github\.com/.*"
+body = '''
+for(;;){var tags=document.getElementsByClassName("js-reviewed-toggle border-blue-light");if(0===tags.length)break;for(var i=0;i<tags.length;i++)tags[i].click()}
+'''

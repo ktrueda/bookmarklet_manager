@@ -1,0 +1,17 @@
+$primary-color: darkblue;
+$background-color: #bada55;
+
+// Chrome applies an 8px margin by default (gross).
+body {
+  margin: 0px;
+}
+
+.PopupContainer {
+  width: 600px;
+  height: 200px;
+
+  .LinkToOptionPage {
+    cursor: pointer;
+    color: blue;
+  }
+}

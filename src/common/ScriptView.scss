@@ -1,0 +1,25 @@
+.Script {
+  background-color: #cccccc;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 4px;
+
+  p {
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+  }
+
+  p.Title {
+    font-weight: 800;
+    font-size: 1.3em;
+  }
+
+  p.ScriptBody {
+    font-size: 0.8em;
+    word-break: break-all;
+    background: #aaaaaa;
+    color: #00ff00;
+    border-radius: 4px;
+    padding: 4px;
+  }
+}

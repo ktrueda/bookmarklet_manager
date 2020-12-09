@@ -1,0 +1,54 @@
+@import "~bootstrap/scss/bootstrap";
+
+// Chrome applies an 8px margin by default (gross).
+body {
+  margin: 0px;
+}
+
+.Container {
+  width: 800px;
+  padding: 12px;
+
+  .ScriptEditor {
+    background-color: #cccccc;
+    padding: 8px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+
+    input {
+      width: 90%;
+    }
+    textarea {
+      width: 90%;
+      height: 200px;
+    }
+
+    .TableRow {
+      grid-template-columns: 60px 1fr;
+      display: grid;
+      align-items: center;
+      padding: 1% 1%;
+    }
+
+    .ErrList {
+      color: red;
+    }
+
+    .Status {
+      float: right;
+    }
+  }
+  .Actions {
+    button {
+      margin-right: 4px;
+    }
+  }
+}
+.modal-90w {
+  width: 60%;
+  max-width: 60%;
+
+  .ReloadButton {
+    margin: 0 0 0 20px;
+  }
+}

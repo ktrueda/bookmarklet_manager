@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Bookmarklet Manager",
+  "description": "Manage you faborite bookmarklet",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  },
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "permissions": ["activeTab", "storage", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["js/contentScript.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "options_page": "option.html"
+}
